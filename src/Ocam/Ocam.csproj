@@ -63,9 +63,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArchiveGenerator.cs" />
+    <Compile Include="Generators\ArchiveGenerator.cs" />
     <Compile Include="MarkdownProcessor.cs" />
-    <Compile Include="RazorProcessor.cs" />
+    <Compile Include="PageProcessors\IPageProcessor.cs" />
+    <Compile Include="PageProcessors\RazorProcessor.cs" />
     <Compile Include="PluginCompiler.cs" />
     <Compile Include="Options.cs" />
     <Compile Include="PathInfo.cs" />
@@ -76,7 +77,7 @@
     <Compile Include="TemplateProcessor.cs" />
     <Compile Include="SiteConfiguration.cs" />
     <Compile Include="ISiteContext.cs" />
-    <Compile Include="IGenerator.cs" />
+    <Compile Include="Generators\IGenerator.cs" />
     <Compile Include="PageProcessingException.cs" />
     <Compile Include="PageModel.cs" />
     <Compile Include="SiteContext.cs" />
