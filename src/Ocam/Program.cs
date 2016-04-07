@@ -28,6 +28,11 @@ namespace Ocam
             var processor = new SiteProcessor();
 
             processor.Process(Directory.GetCurrentDirectory(), options);
+
+#if DEBUG
+            Console.WriteLine("Done ...");
+            Console.ReadLine();
+#endif
         }
 
         static Options ProcessCommandLine(string[] args)
